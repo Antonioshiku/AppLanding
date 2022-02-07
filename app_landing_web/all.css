@@ -362,6 +362,7 @@ header {
   position: absolute;
   background-color: #ff3399;
   right: 22px;
+  bottom: 15px;
   border-radius: 50px;
   position: fixed;
   display: flex;
@@ -478,6 +479,115 @@ header {
    color: #232f55;
    font-family: Josefin Sans;
 }
+.business_section >button{
+  width: 160px;
+  height: 60px;
+ margin-top: 30px;
+  border-radius: 32px;
+  border: 3px solid white;
+  background: linear-gradient(to bottom, #ff9933 0%, #ff33cc 100%);
+  background-color: inherit;
+  font-family: sans-serif;
+  font-size: 19px;
+  font-weight: bold;
+ color: white;
+ margin-right: 70px;
+}
+.business_section >button:hover{
+  background: linear-gradient(to top, #ff9933 0%, #ff33cc 100%);
+  transition: background .5s ease-in-out;
+}
+.Main_It_con{
+   width: 100%;
+   background: linear-gradient(to right, #011120 0%, #000046 99%);
+   margin-top: 80px;
+}
+.it_service_con{ 
+  width: 100%;
+  display: flex;
+}
+.left_it_section{
+   width: 50%;
+   display: flex;
+   flex-direction: column;
+   padding: 60px 50px;
+}
+.left_it_section p{
+   font-size: 17px;
+   color: #ff3399;
+   font-family: Josefin sans;
+}
+.left_it_section h1{
+   font-size: 46px;
+   font-family: Josefin sans;
+   color: white;
+   padding-top: 20px;
+   line-height: 3.5rem;
+}
+.right_it_section{
+   width: 50%;
+  padding-top: 110px;
+}
+.right_it_section p{
+   font-size: 21px;
+   color: white;
+   line-height: 1.8rem;
+   font-family: Josefin sans;
+   padding-right: 50px;
+   padding-left: 30px;
+}
+.main_card_section{
+   display: flex;
+   width: 100%;
+   justify-content: space-evenly;
+   flex: 1 1 20rem;
+   flex-wrap: wrap;
+}
+.main_card_section div{
+            width: 250px;
+            height: 220px;
+            border: 1px solid gainsboro;
+            text-align: center;
+            display: relative;
+}
+.main_card_section div img{
+   padding-top: 50px;
+}
+.main_card_section div h3{
+   color: white;
+   font-size: 23px;
+   font-family: Josefin Sans,sans-serif;
+ margin: 40px 30px;
+ display: relative;
+}
+.hover_eff{
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   background-color: gainsboro;
+   opacity: 0;
+ 
+}
+.main_card_section div:hover .hover_eff{
+   transition: all .5s ease-in-out;
+   opacity: .2;
+ 
+}
+.main_card_section div:hover img{
+         transform: translateY(-5px);
+         transition: all .4s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -581,4 +691,24 @@ header {
   .card_section > div:nth-child(3) {
     margin-top: 50px;
   }
+  .business_con {
+     display: flex;
+     flex-wrap: wrap;
+  }
+ .img_section{
+    width: 100%;
+ }
+ .img_section img{
+     width: 90%;
+     margin-left: 30px;
+ }
+ .Feature_con{
+    position: relative;
+    width: 60%;
+  left: 35px;
+   bottom: 120px;
+ }
+ .business_section{
+    width: 100%;
+ }
 }
