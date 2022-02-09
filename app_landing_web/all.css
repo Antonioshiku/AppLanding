@@ -501,6 +501,7 @@ header {
    width: 100%;
    background: linear-gradient(to right, #011120 0%, #000046 99%);
    margin-top: 80px;
+   padding-bottom: 120px;
 }
 .it_service_con{ 
   width: 100%;
@@ -577,24 +578,184 @@ header {
          transform: translateY(-5px);
          transition: all .4s ease-in-out;
 }
+.partner_con{
+   width: 60%;
+   margin: 120px auto;
+   text-align: center;
+   
+}
+.partner_con h2{
+   font-size: 43px;
+   color: #003366;
+   font-family: Josefin Sans;
+   padding-bottom: 20px;
+}
+.partner_con p{
+     font-size: 19px;
+     font-family:sans-serif;
+     color: #003366;
+     line-height: 1.8rem;
+     padding-top: 20px;
+     padding-bottom: 20px;
+}
+.partner_con button{
+   width: 200px;
+   height: 50px;
+   border-radius: 22px;
+   color: rgb(189, 5, 67);
+   font-size: 18px;
+   font-family: Josefin Sans;
+   border: 1px solid rgb(189, 5, 67);
+   background-color: initial;
+   margin-top: 30px;
+   position: relative;
+   z-index: 8;
+   overflow: hidden;
+}
+.partner_con button::before{
+         content: " ";
+          width: 100%;
+          height: 101%;
+          position: absolute;
+          background-color: #000046;
+          left: 0;
+          top: -60px;
+          border-radius: 22px;
+          right: 0;
+          bottom: 0;
+          z-index: -1;
+          transform-origin: top;
+         
+}
+.partner_con button:hover{
+        transition: all .5s ease-in-out;
+        color: white;
+        position: relative;
+}
+.partner_con button:hover::before{
+          position: absolute;
+          top: 0;
+          transition: all .5s ease-in-out;
+          bottom: 0;
+        
+}
+.job_section{
+           width: 100%;
+           display: flex;
+           justify-content: space-evenly;
+           flex: 1 1 25rem;
+           flex-wrap: wrap;
+}
+.job_section div{
+         width: 260px;
+        display: flex;
+        flex-direction: column;
+           text-align: center
+}
+.job_section div span{
+   font-size: 56px;
+   font-weight: bold;
+   font-family: Josefin Sans;
+   padding-bottom: 30px;
+   color: #003366;
+}
+.job_section div p{
+            font-size: 18px;
+            font-family: sans-serif;
+            color: #003366;
+}
+.main_footer{
+   display: flex;
+   width: 100%;
+   justify-content: space-evenly;
+   padding-top: 50px;
+   margin-top: 50px;
+   background: linear-gradient(to right, #011120 0%, #000046 99%);
+}
 
+/* first footer section  */
 
+.first_footer_section{
+   width: 22%;
+   display: flex;
+   flex-direction: column;
+}
+.first_footer_section img{
+      width: 130px;
+      padding-bottom: 20px;
+}
+.first_footer_section p{
+   font-family: sans-serif;
+   color: white;
+    line-height: 1.6rem;
+}
+.first_footer_section h3{
+  font-family: sans-serif;
+  color: white;
+    font-size: 30px;
+    padding-top: 26px;
+}
+.first_footer_section a{
+  font-family: sans-serif;
+  color: white;
+    font-size: 17px;
+    padding-top: 16px;
+}
 
+/* first footer section end */
 
+/* sec footer section */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+.sec_footer_section{
+  width: 12%;
+  display: flex;
+  flex-direction: column;
+}
+.third_footer_section{
+  width: 12%;
+  display: flex;
+  flex-direction: column;
+}
+.fourth_footer_section{
+  width: 27%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.fourth_footer_section h2{
+         font-size: 24px;
+         font-family: Mulish,serif;
+         color: white;
+}
+.fourth_footer_section p{
+            font-size: 19px;
+            font-family: Mulish;
+            color: white;
+            line-height: 1.7rem;
+            padding-top: 40px;
+}
+.fourth_footer_section input{
+         width: 310px;
+         height: 50px;
+         color: #003366;
+         font-size: 20px;
+         font-family: Mulish;
+         padding-left: 14px;
+         border: none;
+         border-radius: 31px;
+         margin-top: 30px;
+}
+#arrow_logo{
+     color: #003366;
+     font-size: 30px;
+     position: absolute;
+     right: 50px;
+     top: 165px;
+}
+.js_input{
+       position: relative;
+       bottom: 30px;
+}
 
 
 
@@ -711,4 +872,60 @@ header {
  .business_section{
     width: 100%;
  }
+.it_service_con{
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+}
+.left_it_section {
+   width: 100%;
+   margin-top: 20px;
+}
+.right_it_section{
+   width: 100%;
+   padding-top: 12px;
+   padding-left: 12px;
+}
+.main_card_section {
+   margin-top: 60px;
+}
+.main_card_section div{
+   height: 240px;
+}
+.main_card_section div:nth-child(3){
+  margin-top: 20px;
+}
+.main_card_section div:nth-child(4){
+  margin-top: 20px;
+}
+.partner_con{
+  width: 100%;
+  
+  text-align: center;
+  
+}
+.partner_con h2{ 
+     padding-left: 20px;
+     padding-right: 20px;
+}
+.partner_con p{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.job_section div{
+   width: 100%;
+   flex: 1 1 16rem;
+   flex-wrap: wrap;
+}
+.job_section div:nth-child(3){
+      padding-top: 50px;
+}
+
+
+
+
+
+
+
+
 }
